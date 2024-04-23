@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App.css */
+.slide{
+  min-width: 25% !important;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    width: 100%;
+    background: linear-gradient(to bottom left, #475569, #064E3B); /* Adjust the gradient as needed */
+  }
+  
+  .content {
+    flex: 1;
+    padding-top: 70px; /* Adjust based on the height of your TopNav */
+    padding-bottom: 60px; /* Adjust based on the height of your BottomNav */
+    overflow-y: auto; /* Enables scrolling */
+  }
+  
+  .top-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 100;
+  }
+  
