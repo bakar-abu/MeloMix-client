@@ -21,8 +21,8 @@ export const Login = () => {
       });
       const { token, message } = response.data;
       if (token) {
-        localStorage.setItem("token", token); // Store token in local storage
-        navigate('/home'); // Redirect to the home page
+        localStorage.setItem("token", token);
+        navigate('/feed'); 
       } else {
         setMessage(message);
         setShowModal(true);

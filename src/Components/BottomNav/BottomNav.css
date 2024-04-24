@@ -9,7 +9,6 @@
 }
 .bottom-nav {
   position: absolute;
-  inset-x: 0;
   bottom: 0;
   z-index: 100;
   background: linear-gradient(to top right, #285653 0%, #187b62 100%);
@@ -27,17 +26,18 @@
 }
 
 .nav-link:hover {
-  color: #008080; /* Change to emerald color on hover */
+  color: #008080; 
 }
 
 .nav-link.active {
-  color: #008080; /* Change to emerald color for active tab */
+  color: #2eff04;
 }
 
 .nav-icon {
   display: inline-block;
   margin-bottom: 1px;
   font-size: 24px;
+
 }
 
 @media (min-width: 768px) {
