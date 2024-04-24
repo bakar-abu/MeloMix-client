@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from "react-router-dom";
-import { Home, Tool, Appstore, File, User, WelcomePage, NotFound404 } from "./Pages";
+import {  Tool, Appstore, File, User, WelcomePage, NotFound404, Feed } from "./Pages";
 import { TopNav } from './Components/TopNav/TopNav';
 import { BottomNav } from "./Components/BottomNav/BottomNav";
 import { Login, Signup } from './Components';
 import { LoginError } from './Components/LoginError';
+
 
 function Main() {
   const location = useLocation();
@@ -47,7 +48,7 @@ function Main() {
           <Route path="/signup" element={<Signup />} />
           {token && (
             <>
-              <Route path="/home" element={<Home />} />
+              <Route path="/feed" element={<Feed />} />
               <Route path="/tool" element={<Tool />} />
               <Route path="/appstore" element={<Appstore />} />
               <Route path="/file" element={<File />} />
