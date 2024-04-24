@@ -7,3 +7,41 @@
     box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.8);
   }
 }
+.bottom-nav {
+  position: absolute;
+  inset-x: 0;
+  bottom: 0;
+  z-index: 100;
+  background: linear-gradient(to top right, #285653 0%, #187b62 100%);
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  padding: 16px 0;
+  box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+.nav-link {
+  width: calc(100% / 5);
+  text-align: center;
+  padding-top: 8px;
+}
+
+.nav-link:hover {
+  color: #008080; /* Change to emerald color on hover */
+}
+
+.nav-link.active {
+  color: #008080; /* Change to emerald color for active tab */
+}
+
+.nav-icon {
+  display: inline-block;
+  margin-bottom: 1px;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .nav-icon {
+    font-size: 36px;
+  }
+}

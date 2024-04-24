@@ -1,6 +1,6 @@
 export * from "./Appstore";
 export * from "./File";
-export * from "./Home";
+export * from "./Feed";
 export * from "./Tool";
 export * from "./User";
 export * from "./WelcomePage";
